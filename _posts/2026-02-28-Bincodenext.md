@@ -2,7 +2,7 @@
 layout: post
 title: "Bincode-next v3"
 date: 2026-02-28 07:00:00 -0500
-categories: test
+categories: Rust
 ---
 
 
