@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Test Post – Should Appear Now"
+---
+
 # RSSN 项目介绍：Rust 语言的高性能科学计算新星
 
 在编程语言快速发展的今天，**Rust** 以其内存安全、高性能和并发能力赢得了广泛关注。但在科学计算领域，Rust 的生态仍相对年轻。这时，**RSSN 项目** 横空出世，它正努力为 Rust 社区打造一个媲美 Python 中 NumPy + SymPy 的强大科学计算框架。
