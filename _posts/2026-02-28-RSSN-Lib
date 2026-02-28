@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Test Post – Should Appear Now"
+title: "RSSN Lib"
+date: 2026-01-15 10:00:00 -0400   # past date, EST offset
 ---
+Content here...
 
 # RSSN 项目介绍：Rust 语言的高性能科学计算新星
 
