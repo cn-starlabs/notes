@@ -2,7 +2,7 @@
 layout: post
 title:  "Wireless Info – March 1st"
 date:   2026-03-01 08:00:00 -0500
-categories: daily
+categories: Network
 ---
 
 Here is a concise overview of **modern Wi-Fi wireless knowledge** (focusing on widely used standards from ~2010 onward), including frequency bands, supported channel widths, and maximum **theoretical PHY speeds** (best-case lab conditions with maximum spatial streams, widest channels, and highest modulation).
