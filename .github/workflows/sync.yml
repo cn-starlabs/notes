@@ -1,0 +1,21 @@
+name: Sync to Second Repo
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to Second Repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.SYNC_TOKEN }}
+          repository: cn-starabs/notes2
+          force: true
