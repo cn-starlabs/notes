@@ -1,8 +1,8 @@
-name: Sync to Second Repo
+name: Sync to Notes2
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 jobs:
   repo-sync:
@@ -12,10 +12,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # This is the fix: disable the default restricted token
+          persist-credentials: false 
 
-      - name: Push to Second Repo
+      - name: Push to Notes2
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.SYNC_TOKEN }}
           repository: cn-starlabs/notes2
+          branch: main
           force: true
