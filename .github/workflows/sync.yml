@@ -12,9 +12,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # This is the fix: disable the default restricted token
           persist-credentials: false 
 
+      # Remove files that should NOT exist in Notes2
+      - name: Clean sensitive files
+        run: |
+          rm -f CNAME
+          rm -rf .github/workflows
+          
       - name: Push to Notes2
         uses: ad-m/github-push-action@master
         with:
